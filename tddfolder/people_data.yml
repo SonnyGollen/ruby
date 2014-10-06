@@ -1,0 +1,25 @@
+    - first_name: Sonny
+      surname: Gollen
+      dob: 10 May 1988
+      emails: 
+        - g@test.com
+        - gsd@test.com
+      phones:
+        - 07123456789
+        - 07709876543
+        
+    - first_name: Dave
+      surname: Lister
+      dob: 25 Jan 1984
+      emails: 
+        - dave@test.com
+      phones:
+        - 07135678467
+        
+    - first_name: Arnold
+      surname: Rimmer
+      dob: 15 Dec 1982
+     emails: 
+        - rimmzie@test.com
+      phones:
+        - 07712121212
