@@ -1,4 +1,5 @@
 require 'date'
+<<<<<<< HEAD
 require 'pry'
 require 'yaml'
 
@@ -7,10 +8,17 @@ class Person
     
     
     #Creates the person object
+=======
+
+class Person
+    attr_accessor :dob, :first_name, :surname, :email, :phone_numbers
+    
+>>>>>>> a531cb927a82e2f1098d6f7cc15f6c5efd3fdbc2
     def initialize(first_name, surname, dob)
         @dob = Date.parse(dob)
         @first_name = first_name.capitalize
         @surname = surname.capitalize
+<<<<<<< HEAD
         @fullname = @first_name + ' '  + @surname
         @emails = []
         @phone_numbers = []
@@ -18,10 +26,17 @@ class Person
     
     
     #Makes the full name from the variables in the initialize method.
+=======
+        @email = []
+        @phone_numbers = []
+    end
+    
+>>>>>>> a531cb927a82e2f1098d6f7cc15f6c5efd3fdbc2
     def fullname
         "#{@first_name} #{@surname}"
     end
     
+<<<<<<< HEAD
     
     #Lets the user enter an email address and pushes it to the email array in the initialize method.
     def add_email(em)
@@ -31,10 +46,17 @@ class Person
 
     
     #Lets the user enter a phone number and pushes it to the phone_numbers array.
+=======
+    def add_email(em)
+        @email.push(em)
+    end
+        
+>>>>>>> a531cb927a82e2f1098d6f7cc15f6c5efd3fdbc2
     def add_phone(num)
         @phone_numbers.push(num)
     end
     
+<<<<<<< HEAD
     
     #Lets the user delete an email from the email array
     def remove_email(demails)
@@ -132,3 +154,21 @@ class AddressBook
 end #End of AddressBook class
 
 #binding.pry
+=======
+    def remove_email(demail)
+        @email.delete_at(demail)
+    end
+    
+    
+end
+
+class FamilyMember < Person
+    attr_accessor :relationship
+    
+    def initialize(first_name, surname, dob, relation)
+        @relationship = relation
+        super(first_name, surname, dob)
+    end
+    
+end
+>>>>>>> a531cb927a82e2f1098d6f7cc15f6c5efd3fdbc2

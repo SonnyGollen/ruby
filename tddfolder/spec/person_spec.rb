@@ -1,9 +1,12 @@
 require 'spec_helper'
 require 'date'
 
+<<<<<<< HEAD
 
     ################################
 
+=======
+>>>>>>> a531cb927a82e2f1098d6f7cc15f6c5efd3fdbc2
 describe "The person class" do
     it "should store basic details" do
         person = Person.new("Joe", "Bloggs", "1 Jan 1990")
@@ -14,8 +17,11 @@ describe "The person class" do
         expect(person.fullname).to eq("Joe Bloggs")
     end
     
+<<<<<<< HEAD
     
 
+=======
+>>>>>>> a531cb927a82e2f1098d6f7cc15f6c5efd3fdbc2
     ################################
     
     it "should store emails" do
@@ -44,14 +50,22 @@ describe "The person class" do
     
     it "should delete email from array" do
         person =  Person.new("Joe", "Bloggs", "1 Jan 1990")
+<<<<<<< HEAD
         expect(person.emails).to eq ([])
+=======
+        expect(person.email).to eq ([])
+>>>>>>> a531cb927a82e2f1098d6f7cc15f6c5efd3fdbc2
         
         person.add_email "joe@foo.com"
         person.add_email "bloggs@foo.com"
         
         person.remove_email 0
         
+<<<<<<< HEAD
         expect(person.emails).to eq (["bloggs@foo.com"])
+=======
+        expect(person.email).to eq (["bloggs@foo.com"])
+>>>>>>> a531cb927a82e2f1098d6f7cc15f6c5efd3fdbc2
     end
     
 end
@@ -69,6 +83,7 @@ describe "The relationship class" do
         expect(@relation.email).to eq([])
         expect(@relation.phone_numbers).to eq([])
     end
+<<<<<<< HEAD
 end
 
     ##################################
@@ -88,3 +103,6 @@ end
 #        expect(book.people).to eq([@first_name = "Joe", @surname = "Bloggs", @dob = "1990-01-01", @emails = "[]", @phone_numbers = "[]"])
 #    end
 #end
+=======
+end
+>>>>>>> a531cb927a82e2f1098d6f7cc15f6c5efd3fdbc2
